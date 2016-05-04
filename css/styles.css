@@ -1,0 +1,118 @@
+html,body {
+	height:100%;
+}
+
+body {
+	margin: 0 0 0 0;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+    background: url('../images/movies.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.wrapper {
+	background-color: white;
+    margin: 0px 10% 0px 10%;
+    overflow: auto;
+    padding: 1em 0em 2em 0em;
+    height: 100%;
+    box-shadow: 0px -8px 20px black inset;
+}
+
+.page-header h1 {
+	text-shadow: 0px 0px 1px;
+}
+
+.page-header #tube {
+	border: 1px solid #e52d27;
+    border-radius: 5px;
+    color: white;
+    background-color: #e52d27;
+    padding: 0px 4px 0px 4px;
+    text-shadow: 0px 0px 6px white;
+    box-shadow: 0px 0px 3px #e52d27;
+    margin-left: 4px;
+}
+
+.search-form {
+    font-family: 'Roboto', sans-serif;
+}
+
+#search-term {
+    margin: 2em 0em 2em 0em;
+}
+
+.search-form #query {
+	font-size: 1.2em;
+    padding: 6px 12px 6px 12px;
+    box-shadow: 0px 0px 10px #e52d27;
+    border: 1px solid #e52d27;
+    border-radius: 10px;
+    color: #e52d27;
+}
+
+.search-form #button {
+	font-size: 1.2em;
+    padding: 6px 12px 6px 12px;
+    margin: 0px 0px 0px 12px;
+    box-shadow: 0px 0px 10px #e52d27;
+    border: 1px solid #e52d27;
+    border-radius: 10px;
+    color: #e52d27;
+    background-color: white;
+    font-weight: bold;
+}
+
+#search-results {
+    display: none;
+}
+
+.resultBox {
+	border: 0px solid #e52d27;
+	box-shadow: 0px 0px 10px #e52d27;
+    margin: 1em 20% 2em 20%;
+    padding: 1em 1em 1em 1em;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    color: #e52d27;
+    background-color: #F8F8F8;
+    word-wrap: break-word;
+}
+
+.resultBox img {
+    max-width: 120px;
+    max-height: 90px;
+    border: 0px solid #e52d27;
+    box-shadow: 0px 0px 10px #e52d27;
+    border-radius: 10px;
+}
+
+.resultBox a {
+    color: #e52d27;
+    font-weight: 700;
+}
+
+
+
+
+/* Responsive CSS Media Query for Mobile Devices */
+@media only screen  
+and (max-device-width : 375px) 
+and (orientation : portrait) {
+
+.wrapper {
+    margin: 0px 4% 0px 4%;
+}
+
+.resultBox {
+    margin: 1em 5% 1em 5%;
+}
+
+.search-form #button {
+    margin-top: 10px;
+}
+
+    }
